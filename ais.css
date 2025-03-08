@@ -133,7 +133,7 @@ nav .button:hover{
         width:100%;
     }
     .service_card{
-        width:80%;
+        width: 250px;
     }
     .service_container{
         flex-direction: column;
