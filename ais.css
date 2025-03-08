@@ -129,6 +129,9 @@ nav .button:hover{
     .navbar_menu .navbar_item,.navbar_menu .navbar_button{
         display: none;
     }
+    .pic-one{
+        width:100%;
+    }
     .service_container{
         flex-direction: column;
     }
