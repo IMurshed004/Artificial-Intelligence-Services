@@ -340,6 +340,9 @@ footer{
 .section_two .icons #t i:hover{
     color:#04adf5;
 }
+.section_two .icons #f i:hover{
+    color:#0022ff;
+}
 .section_two .icons #ut i:hover{
     color:#bd0000;
 }
