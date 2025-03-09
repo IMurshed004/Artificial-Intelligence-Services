@@ -119,10 +119,6 @@ nav .button:hover{
 }
 
 @media screen and (max-width:860px){
-    .hero_container{
-        flex-direction: column;
-        justify-content: space-around;
-    }
     .text_container{
         margin-bottom: 20px;
     }
@@ -131,12 +127,6 @@ nav .button:hover{
     }
     .pic-one{
         width:100%;
-    }
-    .service_card{
-        width: 250px;
-    }
-    .service_container{
-        flex-direction: column;
     }
     .bars{
         display: flex;
@@ -154,9 +144,10 @@ nav .button:hover{
 }
 .hero_container{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background:#131313;
-    height: 500px;
+    height: 100%;
     padding-left: 25px;
 }
 .pic-one{
@@ -230,38 +221,27 @@ nav .button:hover{
 }
 .service_container{
     display: flex;
+    flex-wrap: wrap;
     justify-content:center;   
 }
 .service_card{
     margin: 0.5rem;
     height: 575px;
-    width:400px;
+    width: 50vh;
     border-radius: 4px;
-    background-image: url('pic-2.jpg');
     background-size: cover;
     position: relative;
     color: #fff;
     margin-bottom: 20px;
 }
-.service_card:nth-child(2){
-    margin: 0.5rem;
-    height: 575px;
-    width:400px;
-    border-radius: 8px;
-    background-image: url('pic-3.jpg');
-    background-size: cover;
-    position: relative;
-    color: #fff;
+#s_one{
+    background-image: url('pic-2.jpg');
 }
-.service_card:nth-child(3){
-    margin: 0.5rem;
-    height: 575px;
-    width:400px;
-    border-radius: 8px;
+#s_two{
+    background-image: url('pic-3.jpg');
+}
+#s_three{
     background-image: url('pic-4.webp');
-    background-size: cover;
-    position: relative;
-    color: #fff;
 }
 .service_card:hover{
     height: 590px;
@@ -308,13 +288,15 @@ footer{
 }
 .section_one{
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-around;
     font-size: 1rem;
 }
 .section_one a{
     color: #ffc280;
     text-decoration: none;
 }
+
 .section_one a:hover{
     color:#5a257d;
     font-size: 1.2rem;
@@ -326,9 +308,18 @@ footer{
 .section_one ul{
     list-style: none;
 }
+.f_one , .f_two{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    width:70vh;
+    font-size: 1rem;
+    padding-top: 20px;
+}
 .section_two{
     display:flex;
     flex-direction:row-reverse;
+    flex-wrap: wrap;
     justify-content:space-around;
     margin-top:70px;
     height:125px;
